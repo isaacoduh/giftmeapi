@@ -32,7 +32,7 @@ class authValidation {
         password = password.replace(spaces, '');
 
         if (!validator.isLength(firstName, {
-                min: 5,
+                min: 3,
                 max: 10
             })) {
             errors.firstName = 'First Name should be between 5 and 10 characters';
@@ -43,7 +43,7 @@ class authValidation {
         }
 
         if (!validator.isLength(lastName, {
-                min: 5,
+                min: 3,
                 max: 10
             })) {
             errors.lastName = 'Last Name should be between 5 and 10 characters';
